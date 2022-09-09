@@ -1,0 +1,14 @@
+@mixin ellip($line-height:15px,$lines:1) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @if($lines > 1){
+        line-height: $line-height;
+        max-height: $line-height * $lines;
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical; /* autoprefixer: off */
+    }@else{
+        white-space: nowrap;
+    }
+}

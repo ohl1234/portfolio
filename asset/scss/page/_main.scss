@@ -1,0 +1,5 @@
+p {
+    @include ellip();
+    font-family: $font-en2;
+    font-size: 30px;
+}
