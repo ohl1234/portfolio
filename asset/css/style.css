@@ -206,6 +206,7 @@ p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-family: "Gilroy-Light", sans-serif;
-  font-size: 30px;
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
 }
