@@ -208,14 +208,16 @@ input, select, button, fieldset {
   position: fixed;
   top: 15px;
   left: 0;
+  z-index: 100;
   width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
   font-family: "Zephyr", arial, sans-serif;
+  mix-blend-mode: difference;
   color: #fff;
 }
-.header > * {
+.header .logo-area {
   padding: 15px 25px;
 }
 .header .logo-area svg {
@@ -231,9 +233,25 @@ input, select, button, fieldset {
   margin-right: 25px;
   border: 1px solid #fff;
   border-radius: 250px;
+  transition: all 0.7s;
+}
+.header .contact-area:hover {
+  background-color: #fff;
+}
+.header .contact-area:hover .link-mail {
+  color: #000;
 }
 .header .link-mail {
-  font-size: 24px;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 58px;
+}
+.header .link-mail span {
+  padding: 5px 30px;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .sc-visual {
@@ -390,11 +408,72 @@ input, select, button, fieldset {
   line-height: 1;
 }
 .sc-intro .caption-area .sub-tit {
-  font-size: 12px;
+  font-size: 18px;
   margin-bottom: 10px;
   font-family: "Fahkwang", sans-serif;
 }
 .sc-intro .caption-area .desc {
   font-size: 30px;
   font-family: "Zephyr", arial, sans-serif;
+}
+
+.sc-project {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.sc-project .title-area {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px 0;
+  font-size: 18px;
+  font-family: "Fahkwang", sans-serif;
+}
+.sc-project .project-area {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.sc-project .project-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.sc-project .project-wrap .column-left {
+  width: 60%;
+  height: 100%;
+}
+.sc-project .project-wrap .column-left .thumb-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.sc-project .project-wrap .column-right {
+  width: 40%;
+}
+.sc-project .project-wrap.wrap1 {
+  background-color: #222;
+}
+.sc-project .project-wrap.wrap2 {
+  background-color: #fff;
+}
+.sc-project .project-wrap.wrap3 {
+  background-color: #ff6f62;
+}
+.sc-project .project-wrap.wrap4 {
+  background-color: #fdfdf5;
+}
+.sc-project .project-wrap.wrap5 {
+  background-color: #fff;
+}
+.sc-project .project-wrap.wrap6 {
+  background-color: #fff;
+}
+.sc-project .project-wrap.wrap7 {
+  background-color: #00d465;
 }
