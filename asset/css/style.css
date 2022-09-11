@@ -62,9 +62,10 @@ body {
   color: #000;
   word-wrap: break-word;
   word-break: break-all;
-  background-color: #fff;
+  background-color: #2f2f2f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -202,11 +203,109 @@ input, select, button, fieldset {
   overflow: hidden;
 }
 
-p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+.header {
+  position: fixed;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Zephyr", arial, sans-serif;
+  color: #fff;
+}
+.header > * {
+  padding: 15px 25px;
+}
+.header .logo-area svg {
+  fill: #fff;
+}
+.header .logo {
+  display: block;
+  width: 85px;
+}
+.header .contact-area {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  border: 1px solid #fff;
+  border-radius: 250px;
+}
+.header .link-mail {
+  font-size: 24px;
+}
+
+.sc-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 110vh;
+  padding-top: 10vw;
+  color: #fff;
+}
+.sc-visual .sc-title {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-family: "Zephyr", arial, sans-serif;
+}
+.sc-visual .txt-line1,
+.sc-visual .txt-line2 {
+  display: block;
+  font-size: 14vw;
+  width: 100%;
+  height: 13vw;
+}
+.sc-visual .txt-line1 {
+  align-self: flex-start;
+}
+.sc-visual .txt-line1 .txt2 {
+  margin-left: 15px;
+  font-size: 8vw;
+}
+.sc-visual .txt-line2 {
+  align-self: flex-end;
+}
+.sc-visual .txt-line2 .txt1 {
+  margin-right: 30px;
+}
+.sc-intro .intro-area {
+  display: flex;
+  padding-left: 4vw;
+  padding-top: 8.5vw;
+  padding-bottom: 5vw;
+  color: #fff;
+}
+.sc-intro .intro-area .sub-tit {
+  display: flex;
+  justify-content: center;
+  width: 33.33333333%;
+}
+.sc-intro .intro-area .round {
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
   font-family: "Fahkwang", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
+  font-size: 12px;
+}
+.sc-intro .intro-area .intro-box {
+  font-family: "Zephyr", arial, sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+}
+.sc-intro .intro-area .txt-line1,
+.sc-intro .intro-area .txt-line2,
+.sc-intro .intro-area .txt-line3 {
+  display: block;
+}
+.sc-intro .intro-area .txt-line1 .txt2 {
+  display: inline-block;
+  padding: 3px 0;
+  border-bottom: 1px solid #fff;
 }
