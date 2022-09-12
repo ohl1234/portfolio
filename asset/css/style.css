@@ -281,6 +281,22 @@ input, select, button, fieldset {
 .footer .link-area a + a {
   margin-left: 25px;
 }
+
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    padding: 30vw 25px 30px 5vw;
+  }
+  .footer .link-area {
+    margin-bottom: 35px;
+  }
+  .footer .link-area a:hover {
+    pointer-events: none;
+  }
+  .footer .link-area a + a {
+    margin-left: 12px;
+  }
+}
 .sc-visual {
   display: flex;
   justify-content: center;
@@ -317,6 +333,35 @@ input, select, button, fieldset {
 }
 .sc-visual .txt-line2 .txt1 {
   margin-right: 30px;
+}
+@media (max-width: 767px) {
+  .sc-visual .sc-title {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
+  }
+  .sc-visual .txt-line1,
+.sc-visual .txt-line2 {
+    display: block;
+    font-size: 18vw;
+  }
+  .sc-visual .txt-line1 {
+    align-self: auto;
+  }
+  .sc-visual .txt-line1 .txt2 {
+    display: block;
+    margin-left: 15px;
+    font-size: 8vw;
+  }
+  .sc-visual .txt-line2 {
+    align-self: auto;
+  }
+  .sc-visual .txt-line2 .txt1 {
+    margin-right: 0;
+  }
+  .sc-visual .txt-line2 .txt2 {
+    display: block;
+  }
 }
 .sc-intro .intro-area {
   display: flex;
@@ -371,11 +416,6 @@ input, select, button, fieldset {
 .sc-intro .point-area > div {
   width: 50%;
   height: 100%;
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-.sc-intro .point-area .column-left {
-  padding-left: 0;
 }
 .sc-intro .point-area .column-left .thumb-box {
   width: 100%;
@@ -423,6 +463,7 @@ input, select, button, fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateY(-280px);
 }
 .sc-intro .caption-area {
   display: flex;
@@ -445,6 +486,74 @@ input, select, button, fieldset {
   font-family: "Zephyr", arial, sans-serif;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sc-intro .num-area .num-box {
+    height: 200px;
+    font-size: 200px;
+  }
+  .sc-intro .num-area .num-list {
+    transform: translateY(-200px);
+  }
+  .sc-intro .point-area .desc-box {
+    max-width: none;
+    padding: 0 5vw;
+  }
+}
+@media (max-width: 767px) {
+  .sc-intro .intro-area {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 8.5vw;
+    padding-bottom: 10vw;
+    color: #fff;
+  }
+  .sc-intro .intro-area .sub-tit {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .sc-intro .intro-area .intro-box {
+    max-width: 300px;
+  }
+  .sc-intro .num-area {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15vw;
+  }
+  .sc-intro .num-area .num-box {
+    height: 200px;
+    font-size: 200px;
+  }
+  .sc-intro .num-area .num-list {
+    transform: translateY(-200px);
+  }
+  .sc-intro .point-area {
+    display: flex;
+    flex-direction: column;
+    padding: 40vw 0 0 0;
+  }
+  .sc-intro .point-area > div {
+    width: 100%;
+    height: 100%;
+  }
+  .sc-intro .point-area .column-right {
+    display: flex;
+    align-self: center;
+    height: 100vh;
+  }
+  .sc-intro .point-area .desc-box {
+    max-width: 320px;
+    text-align: center;
+  }
+  .sc-intro .caption-area .desc {
+    text-align: center;
+    max-width: 278px;
+  }
+}
 .sc-project {
   position: relative;
   width: 100%;
@@ -533,12 +642,18 @@ input, select, button, fieldset {
 .sc-project .project-wrap.wrap5 {
   background-color: #fff;
 }
+.sc-project .project-wrap.wrap5 img {
+  width: 40vw;
+}
 .sc-project .project-wrap.wrap5 .links a:hover {
   background-color: #000;
   color: #fff;
 }
 .sc-project .project-wrap.wrap6 {
   background-color: #fff;
+}
+.sc-project .project-wrap.wrap6 img {
+  width: 40vw;
 }
 .sc-project .project-wrap.wrap6 .links a:hover {
   background-color: #000;
@@ -609,6 +724,80 @@ input, select, button, fieldset {
   margin: 0 4px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sc-project .project-wrap .column-left {
+    width: 50%;
+  }
+  .sc-project .project-wrap .column-right {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .sc-project .project-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sc-project .project-wrap .column-left {
+    width: 100%;
+    height: 50%;
+  }
+  .sc-project .project-wrap .column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+  .sc-project .project-wrap .project-tit {
+    font-size: 40px;
+  }
+  .sc-project .project-wrap .skill {
+    justify-content: center;
+  }
+  .sc-project .project-wrap.wrap1 img {
+    width: 60vw;
+  }
+  .sc-project .project-wrap.wrap1 .links a:hover {
+    pointer-events: none;
+  }
+  .sc-project .project-wrap.wrap2 img {
+    width: 60vw;
+  }
+  .sc-project .project-wrap.wrap2 .links a:hover {
+    pointer-events: none;
+  }
+  .sc-project .project-wrap.wrap3 img {
+    width: 24vw;
+  }
+  .sc-project .project-wrap.wrap3 .links a:hover {
+    pointer-events: none;
+  }
+  .sc-project .project-wrap.wrap4 img {
+    width: 60vw;
+  }
+  .sc-project .project-wrap.wrap4 .links a:hover {
+    pointer-events: none;
+  }
+  .sc-project .project-wrap.wrap5 img {
+    width: 60vw;
+  }
+  .sc-project .project-wrap.wrap5 .links a:hover {
+    pointer-events: none;
+  }
+  .sc-project .project-wrap.wrap6 img {
+    width: 60vw;
+  }
+  .sc-project .project-wrap.wrap6 .links a:hover {
+    pointer-events: none;
+  }
+  .sc-project .project-wrap.wrap7 img {
+    width: 40vw;
+  }
+  .sc-project .project-wrap.wrap7 .links a:hover {
+    pointer-events: none;
+  }
+}
 .sc-goal {
   padding-top: 30vw;
 }
@@ -634,7 +823,7 @@ input, select, button, fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateY(-280px);
+  transform: translateY(-560px);
 }
 .sc-goal .goal-area {
   display: flex;
@@ -643,8 +832,6 @@ input, select, button, fieldset {
 .sc-goal .goal-area > div {
   width: 50%;
   height: 100%;
-  padding-left: 2vw;
-  padding-right: 2vw;
 }
 .sc-goal .goal-area .column-left {
   align-self: center;
@@ -673,6 +860,57 @@ input, select, button, fieldset {
   width: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sc-goal .num-area .num-box {
+    height: 200px;
+    font-size: 200px;
+  }
+  .sc-goal .num-area .num-list {
+    transform: translateY(-400px);
+  }
+  .sc-goal .goal-area .desc-box {
+    max-width: none;
+    padding: 0 5vw;
+  }
+}
+@media (max-width: 767px) {
+  .sc-goal .num-area {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15vw;
+  }
+  .sc-goal .num-area .num-box {
+    height: 200px;
+    font-size: 200px;
+  }
+  .sc-goal .num-area .num-list {
+    transform: translateY(-400px);
+  }
+  .sc-goal .goal-area {
+    flex-direction: column;
+  }
+  .sc-goal .goal-area > div {
+    width: 100%;
+    height: auto;
+  }
+  .sc-goal .goal-area .column-left {
+    display: flex;
+    height: 100vh;
+  }
+  .sc-goal .goal-area .column-right {
+    padding-right: 0;
+    height: 1000px;
+  }
+  .sc-goal .goal-area .column-right img {
+    width: 100%;
+    height: 100%;
+  }
+  .sc-goal .goal-area .desc-box {
+    max-width: 320px;
+    text-align: center;
+  }
+}
 .sc-contact {
   display: flex;
   flex-direction: column;
@@ -724,4 +962,24 @@ input, select, button, fieldset {
   font-size: 17vw;
   width: 100%;
   line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .sc-contact .msg-area {
+    padding-left: 0;
+    margin-bottom: 30vw;
+    text-align: center;
+  }
+  .sc-contact .contact-area {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sc-contact .sub-tit {
+    width: 100%;
+  }
+  .sc-contact .contact-box {
+    margin-bottom: 20vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

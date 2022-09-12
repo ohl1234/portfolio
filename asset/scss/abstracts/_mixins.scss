@@ -12,3 +12,21 @@
         white-space: nowrap;
     }
 }
+
+// responsive
+
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 767px;
+
+@mixin tablet {
+    @media (min-width:$tablet) and (max-width:$laptop){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:$mobile){
+        @content;
+    }
+}
