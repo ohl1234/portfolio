@@ -254,6 +254,22 @@ input, select, button, fieldset {
   line-height: 1;
 }
 
+@media (max-width: 767px) {
+  .header .link-mail {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    border-radius: 50px;
+    font-family: "Fahkwang", sans-serif;
+  }
+  .header .link-mail span {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 1;
+  }
+}
 .footer {
   display: flex;
   justify-content: space-between;

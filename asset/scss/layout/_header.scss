@@ -50,3 +50,22 @@
         }
     }
 }
+
+@include mobile {
+    .header {
+        .link-mail {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            border-radius: 50px;
+            font-family: $font-en4;
+            span {
+                padding: 0 15px;
+                font-size: 15px;
+                line-height: 1;
+            }
+        }
+    }
+}
