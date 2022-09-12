@@ -239,6 +239,14 @@
                 max-width: 300px;
                 margin-bottom: 20vw;
             }
+            .txt-line1 {
+                .txt2 {
+                    opacity: 1;
+                    &:hover {
+                        pointer-events: none;
+                    }
+                }
+            }
         }
         .num-area {
             justify-content: center;
