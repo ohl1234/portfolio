@@ -533,6 +533,7 @@ input, select, button, fieldset {
   }
   .sc-intro .intro-area .intro-box {
     max-width: 300px;
+    margin-bottom: 20vw;
   }
   .sc-intro .num-area {
     justify-content: center;
