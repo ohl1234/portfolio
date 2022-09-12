@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5vw 25px 30px;
+    font-size: 14px;
+    font-family: $font-en4;
+    background-color: #000;
+    color: #fff;
+    .link-area {
+        display: flex;
+        a {
+            padding: 10px 25px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            transition: all 0.5s;
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+            & + a {
+                margin-left: 25px;
+            }
+        }
+    }
+    .copy-area {
+        small {}
+    }
+}

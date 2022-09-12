@@ -88,7 +88,7 @@
     }
     .point-area {
         display: flex;
-        padding: 40vw 0 5vw 0;
+        padding: 30vw 0 5vw 0;
         background-color: #fff;
         & > div {
             width: 50%;
@@ -372,7 +372,6 @@
         padding-left: 5vw;
         padding-right: 5vw;
         padding-bottom: 15vw;
-        //background-color: #fff;
         & > * {
             display: block;
         }
@@ -394,7 +393,6 @@
     .goal-area {
         display: flex;
         padding: 0 0 5vw 0;
-        //background-color: #fff;
         & > div {
             width: 50%;
             height: 100%;
@@ -427,5 +425,57 @@
                 width: 100%;
             }
         }
+    }
+}
+.sc-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20vw;
+    background-color: #000;
+    color: #fff;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 5vw;
+    .msg-area {
+        padding-left: 6vw;
+        margin-bottom: 90px;
+    }
+    .contact-msg {
+        font-size: 18px;
+        font-family: $font-en4;
+    }
+    .contact-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-tit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+    .link-mail {
+        display: block;
+        width: 140px;
+        height: 140px;
+        line-height: 140px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        font-family: $font-en4;
+        font-size: 12px;
+    }
+    .contact-box {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .contact-txt {
+        font-family: $font-en1;
+        font-size: 17vw;
+        width: 100%;
+        line-height: 1;
     }
 }

@@ -211,14 +211,13 @@ input, select, button, fieldset {
   z-index: 100;
   width: 100%;
   height: 60px;
+  padding: 0 25px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: "Zephyr", arial, sans-serif;
   mix-blend-mode: difference;
   color: #fff;
-}
-.header .logo-area {
-  padding: 15px 25px;
 }
 .header .logo-area svg {
   fill: #fff;
@@ -230,7 +229,6 @@ input, select, button, fieldset {
 .header .contact-area {
   display: flex;
   align-items: center;
-  margin-right: 25px;
   border: 1px solid #fff;
   border-radius: 50px;
   transition: all 0.7s;
@@ -248,6 +246,7 @@ input, select, button, fieldset {
   height: 100%;
   line-height: 58px;
   border-radius: 50px;
+  font-family: "Fahkwang", sans-serif;
 }
 .header .link-mail span {
   padding: 0 30px;
@@ -255,6 +254,33 @@ input, select, button, fieldset {
   line-height: 1;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5vw 25px 30px;
+  font-size: 14px;
+  font-family: "Fahkwang", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+.footer .link-area {
+  display: flex;
+}
+.footer .link-area a {
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.footer .link-area a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.footer .link-area a + a {
+  margin-left: 25px;
+}
 .sc-visual {
   display: flex;
   justify-content: center;
@@ -339,7 +365,7 @@ input, select, button, fieldset {
 }
 .sc-intro .point-area {
   display: flex;
-  padding: 40vw 0 5vw 0;
+  padding: 30vw 0 5vw 0;
   background-color: #fff;
 }
 .sc-intro .point-area > div {
@@ -645,4 +671,57 @@ input, select, button, fieldset {
 }
 .sc-goal .goal-area .column-right .thumb-box {
   width: 100%;
+}
+
+.sc-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20vw;
+  background-color: #000;
+  color: #fff;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 5vw;
+}
+.sc-contact .msg-area {
+  padding-left: 6vw;
+  margin-bottom: 90px;
+}
+.sc-contact .contact-msg {
+  font-size: 18px;
+  font-family: "Fahkwang", sans-serif;
+}
+.sc-contact .contact-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sc-contact .sub-tit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.sc-contact .link-mail {
+  display: block;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-family: "Fahkwang", sans-serif;
+  font-size: 12px;
+}
+.sc-contact .contact-box {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.sc-contact .contact-txt {
+  font-family: "Zephyr", arial, sans-serif;
+  font-size: 17vw;
+  width: 100%;
+  line-height: 1;
 }

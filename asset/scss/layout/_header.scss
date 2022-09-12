@@ -5,13 +5,14 @@
     z-index: 100;
     width: 100%;
     height: 60px;
+    padding: 0 25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: $font-en1;
     mix-blend-mode: difference;
     color: #fff;
     .logo-area {
-        padding: 15px 25px;
         svg {
             fill: #fff;
         }
@@ -23,7 +24,6 @@
     .contact-area {
         display: flex;
         align-items: center;
-        margin-right: 25px;
         border: 1px solid #fff;
         border-radius: 50px;
         transition: all 0.7s;
@@ -42,6 +42,7 @@
         height: 100%;
         line-height: 58px;
         border-radius: 50px;
+        font-family: $font-en4;
         span {
             padding: 0 30px;
             font-size: 18px;
