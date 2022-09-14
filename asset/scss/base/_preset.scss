@@ -6,3 +6,22 @@
     margin: -1px;
     overflow: hidden;
 }
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.1s ease;
+    mix-blend-mode: difference;
+    &.cursor-over {
+        width: 10px;
+        height: 10px;
+    }
+}

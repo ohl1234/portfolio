@@ -70,6 +70,7 @@
         }
     }
 }
+
 .sc-intro {
     .intro-area {
         display: flex;
@@ -93,6 +94,12 @@
             border-radius: 50%;
             font-family: $font-en4;
             font-size: 12px;
+            transition: all 0.8s;
+            &:hover {
+                border: 1px solid transparent;
+                background-color: #fff;
+                color: #000;
+            }
         }
         .intro-box {
             font-family: $font-en1;
@@ -105,6 +112,7 @@
             display: block;
         }
         .txt-line1 {
+            position: relative;
             .txt2 {
                 display: inline-block;
                 padding: 3px 0;
@@ -116,12 +124,34 @@
                     opacity: 1;
                 }
             }
+            .intro-bg {
+                position: absolute;
+                top: -10vw;
+                left: 60%;
+                z-index: -1;
+                display: block;
+                width: 25vw;
+                height: 35vw;
+                overflow: hidden;
+            }
+            .profile {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 25vw;
+                height: 35vw;
+                background-image: url(../images/ohr-profile.jpeg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                animation: widthAni 1s linear forwards;
+            }
         }
     }
     .point-area {
         display: flex;
         padding: 30vw 0 5vw 0;
-        background-color: #fff;
+        //background-color: #fff;
         & > div {
             width: 50%;
             height: 100%;
@@ -246,6 +276,9 @@
                         pointer-events: none;
                     }
                 }
+                .intro-bg {
+                    display: none;
+                }
             }
         }
         .num-area {
@@ -304,7 +337,6 @@
         // position: sticky;
         // top: 0;
         // left: 0;
-        height: 700vh;
     }
     .project-wrap {
         width: 100%;
@@ -770,6 +802,12 @@
         border-radius: 50%;
         font-family: $font-en4;
         font-size: 12px;
+        transition: all 0.8s;
+        &:hover {
+            border: 1px solid transparent;
+            background-color: #fff;
+            color: #000;
+        }
     }
     .contact-box {
         padding-left: 2vw;
