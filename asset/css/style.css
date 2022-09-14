@@ -60,12 +60,13 @@ body {
   font-size: 14px;
   font-family: "Pretendard", arial, sans-serif;
   line-height: 1.25em;
-  color: #000;
+  color: #fff;
   word-wrap: break-word;
   word-break: break-all;
-  background-color: #2f2f2f;
+  background-color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: none;
   overflow-x: hidden;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
@@ -304,6 +305,7 @@ input, select, button, fieldset {
   display: flex;
 }
 .footer .link-area a {
+  display: block;
   padding: 10px 25px;
   border: 1px solid #fff;
   border-radius: 50px;
@@ -512,7 +514,6 @@ input, select, button, fieldset {
   padding-left: 5vw;
   padding-right: 5vw;
   padding-bottom: 15vw;
-  background-color: #fff;
 }
 .sc-intro .num-area > * {
   display: block;
@@ -537,7 +538,6 @@ input, select, button, fieldset {
   justify-content: center;
   align-items: center;
   padding: 15vw 0 37vw;
-  background-color: #fff;
 }
 .sc-intro .caption-area > * {
   line-height: 1;
@@ -643,6 +643,9 @@ input, select, button, fieldset {
   font-size: 18px;
   font-family: "Fahkwang", sans-serif;
   mix-blend-mode: difference;
+}
+.sc-project .project-area {
+  color: #000;
 }
 .sc-project .project-wrap {
   width: 100%;

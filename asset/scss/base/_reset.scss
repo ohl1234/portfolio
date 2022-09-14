@@ -21,13 +21,13 @@ body {
     font-size: 14px;
     font-family: $font-kn1;
     line-height: 1.25em;
-    color: #000;
+    color: #fff;
     word-wrap: break-word;
     word-break: break-all;
-    background-color: #2f2f2f;
+    background-color: #000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    //cursor: none;
+    cursor: none;
     overflow-x: hidden;
     overflow-y: scroll;
     -ms-overflow-style: none; /* IE and Edge */

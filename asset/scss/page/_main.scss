@@ -188,7 +188,7 @@
         padding-left: 5vw;
         padding-right: 5vw;
         padding-bottom: 15vw;
-        background-color: #fff;
+        //background-color: #fff;
         & > * {
             display: block;
         }
@@ -213,7 +213,7 @@
         justify-content: center;
         align-items: center;
         padding: 15vw 0 37vw;
-        background-color: #fff;
+        //background-color: #fff;
         & > * {
             line-height: 1;
         }
@@ -337,6 +337,7 @@
         // position: sticky;
         // top: 0;
         // left: 0;
+        color: #000;
     }
     .project-wrap {
         width: 100%;
