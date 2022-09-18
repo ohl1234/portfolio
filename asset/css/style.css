@@ -670,8 +670,8 @@ input, select, button, fieldset {
   width: 40%;
 }
 .sc-project .project-wrap.wrap1 {
-  color: #fff;
   background-color: #222;
+  color: #fff;
 }
 .sc-project .project-wrap.wrap1 img {
   width: 40vw;
@@ -716,24 +716,28 @@ input, select, button, fieldset {
   color: #fff;
 }
 .sc-project .project-wrap.wrap5 {
-  background-color: #fff;
+  background-color: #eb5b29;
 }
 .sc-project .project-wrap.wrap5 img {
-  width: 40vw;
+  width: 30vw;
 }
 .sc-project .project-wrap.wrap5 .links a:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #eb5b29;
 }
 .sc-project .project-wrap.wrap6 {
-  background-color: #fff;
+  background-color: #2ac1bc;
+  color: #fff;
 }
 .sc-project .project-wrap.wrap6 img {
   width: 40vw;
 }
+.sc-project .project-wrap.wrap6 .links a {
+  border: 1px solid #fff;
+}
 .sc-project .project-wrap.wrap6 .links a:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #2ac1bc;
 }
 .sc-project .project-wrap.wrap7 {
   color: #fff;
@@ -854,7 +858,7 @@ input, select, button, fieldset {
     pointer-events: none;
   }
   .sc-project .project-wrap.wrap5 img {
-    width: 60vw;
+    width: 40vw;
   }
   .sc-project .project-wrap.wrap5 .links a:hover {
     pointer-events: none;

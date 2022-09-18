@@ -361,8 +361,8 @@
             width: 40%;
         }
         &.wrap1 {
-            color: #fff;
             background-color: #222;
+            color: #fff;
             img {
                 width: 40vw;
             }
@@ -419,29 +419,31 @@
             }
         }
         &.wrap5 {
-            background-color: #fff;
+            background-color: #eb5b29;
             img {
-                width: 40vw;
+                width: 30vw;
             }
             .links {
                 a {
                     &:hover {
-                        background-color: #000;
-                        color: #fff;
+                        background-color: #fff;
+                        color: #eb5b29;
                     }
                 }
             }
         }
         &.wrap6 {
-            background-color: #fff;
+            background-color: #2ac1bc;
+            color: #fff;
             img {
                 width: 40vw;
             }
             .links {
                 a {
+                    border: 1px solid #fff;
                     &:hover {
-                        background-color: #000;
-                        color: #fff;
+                        background-color: #fff;
+                        color: #2ac1bc;
                     }
                 }
             }
@@ -600,7 +602,7 @@
             }
             &.wrap5 {
                 img {
-                    width: 60vw;
+                    width: 40vw;
                 }
                 .links {
                     a {

@@ -1,5 +1,4 @@
 $(function(){
-
     // 마우스커서 모바일땐 없애기
     $(window).mousemove(function(e){
         e.preventDefault();
@@ -18,6 +17,7 @@ $(function(){
         $('.cursor').removeClass('cursor-over')
     })
     
+    // 바탕색 변하는거
     // 스크롤 트리거 이벤트
     // 퍼스펙티브 3d
     // 사진 스크롤 트리거
