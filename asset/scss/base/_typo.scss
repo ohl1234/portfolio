@@ -1,19 +1,28 @@
 @font-face {
-	font-family: 'Pretendard';
-	src: url(../fonts/woff2/Pretendard-Medium.woff2) format('woff2'),
-    url(../fonts/woff/Pretendard-Medium.woff) format('woff');
-   
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Medium.eot');
+    src: url('../fonts/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pretendard-Medium.woff2') format('woff2'),
+        url('../fonts/Pretendard-Medium.woff') format('woff'),
+        url('../fonts/Pretendard-Medium.ttf') format('truetype'),
+        url('../fonts/Pretendard-Medium.svg#Pretendard-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Pretendard';
-	src: url(../fonts/woff2/Pretendard-Light.woff2) format('woff2'),
-    url(../fonts/woff/Pretendard-Light.woff) format('woff');
-	
+    font-family: 'Pretendard';
+    src: url('../fonts/Pretendard-Light.eot');
+    src: url('../fonts/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pretendard-Light.woff2') format('woff2'),
+        url('../fonts/Pretendard-Light.woff') format('woff'),
+        url('../fonts/Pretendard-Light.ttf') format('truetype'),
+        url('../fonts/Pretendard-Light.svg#Pretendard-Light') format('svg');
+
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -29,16 +38,28 @@
 }
 
 @font-face {
-    font-family: 'Culture';
-    src: url(../fonts/Culture.eot);
-    src: url(../fonts/Culture.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/Culture.otf) format('otf'),
-         url(../fonts/Culture.svg#Culture) format('svg'),
-         url(../fonts/Culture.ttf) format('truetype'),
-         url(../fonts/Culture.woff) format('woff'),
-         url(../fonts/Culture.woff2) format('woff2');
-    
-    font-weight: 400;
-    font-style: normal;      
+    font-family: 'Fahkwang';
+    src: url('../fonts/Fahkwang-Medium.eot');
+    src: url('../fonts/Fahkwang-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Fahkwang-Medium.woff2') format('woff2'),
+        url('../fonts/Fahkwang-Medium.woff') format('woff'),
+        url('../fonts/Fahkwang-Medium.ttf') format('truetype'),
+        url('../fonts/Fahkwang-Medium.svg#Fahkwang-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.eot');
+    src: url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype'),
+        url('../fonts/Gilroy-Light.svg#Gilroy-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
