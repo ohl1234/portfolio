@@ -113,12 +113,10 @@ $(function(){
             /**
              * Trigger event
              */
-            gsap.set('.sc-visual .txt-line1',{xPercent:-180})
-            gsap.set('.sc-visual .txt-line2',{xPercent:180})
             const visualAni = gsap.timeline({
                     scrollTrigger:{
                     trigger:'.sc-visual .sc-title',
-                    start:'top bottom',
+                    start:'top 30%',
                     end:'bottom top',
                     scrub:1
                 }
@@ -126,7 +124,7 @@ $(function(){
             visualAni.addLabel('a')
             .to('.sc-visual .txt-line1',{xPercent:100},'a')
             .to('.sc-visual .txt-line2',{xPercent:-100},'a')
-
+            
             /**
              * Trigger 
              */
