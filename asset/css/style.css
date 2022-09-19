@@ -258,7 +258,7 @@ input, select, button, fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Zephyr", "Culture", arial, sans-serif;
+  font-family: "Zephyr", arial, sans-serif;
   mix-blend-mode: difference;
   color: #fff;
 }
@@ -372,7 +372,7 @@ input, select, button, fieldset {
   flex-direction: column;
   padding-left: 2vw;
   padding-right: 2vw;
-  font-family: "Zephyr", "Culture", arial, sans-serif;
+  font-family: "Zephyr", arial, sans-serif;
 }
 .sc-visual .txt-line1,
 .sc-visual .txt-line2 {
@@ -455,7 +455,7 @@ input, select, button, fieldset {
   color: #000;
 }
 .sc-intro .intro-area .intro-box {
-  font-family: "Zephyr", "Culture", arial, sans-serif;
+  font-family: "Zephyr", arial, sans-serif;
   font-size: 42px;
   line-height: 42px;
 }
@@ -553,7 +553,7 @@ input, select, button, fieldset {
   height: 280px;
   font-size: 280px;
   line-height: 1;
-  font-family: "Zephyr", "Culture", arial, sans-serif;
+  font-family: "Zephyr", arial, sans-serif;
   overflow: hidden;
 }
 .sc-intro .num-area .num-list {
@@ -579,12 +579,12 @@ input, select, button, fieldset {
 }
 .sc-intro .caption-area .desc {
   font-size: 30px;
-  font-family: "Zephyr", "Culture", arial, sans-serif;
+  font-family: "Zephyr", arial, sans-serif;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .sc-intro .intro-area .intro-box {
-    font-family: "Zephyr", "Culture", arial, sans-serif;
+    font-family: "Zephyr", arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
   }
@@ -795,7 +795,7 @@ input, select, button, fieldset {
   line-height: 1;
   font-size: 25px;
   font-style: italic;
-  font-family: "Zephyr", "Culture", arial, sans-serif;
+  font-family: "Zephyr", arial, sans-serif;
 }
 .sc-project .project-tit {
   margin: 20px 0 25px;
@@ -926,7 +926,7 @@ input, select, button, fieldset {
   height: 280px;
   font-size: 280px;
   line-height: 1;
-  font-family: "Zephyr", "Culture", arial, sans-serif;
+  font-family: "Zephyr", arial, sans-serif;
   overflow: hidden;
 }
 .sc-goal .num-area .num-list {
@@ -1071,7 +1071,7 @@ input, select, button, fieldset {
   padding-right: 2vw;
 }
 .sc-contact .contact-txt {
-  font-family: "Zephyr", "Culture", arial, sans-serif;
+  font-family: "Zephyr", arial, sans-serif;
   font-size: 17vw;
   width: 100%;
   line-height: 1;

@@ -18,16 +18,16 @@
 
 @font-face {
     font-family: 'Zephyr';
-    src: url(../fonts/Zephyr.eot);
-    src: url(../fonts/Zephyr.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/Zephyr.otf) format('otf'),
-         url(../fonts/Zephyr.svg#Zephyr) format('svg'),
-         url(../fonts/Zephyr.ttf) format('truetype'),
-         url(../fonts/Zephyr.woff) format('woff'),
-         url(../fonts/Zephyr.woff2) format('woff2');
-
-    font-weight: 400;
-    font-style: normal;     
+    src: url(../fonts/ZephyrRegular.eot);
+    src: url(../fonts/ZephyrRegular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/ZephyrRegular.woff2) format('woff2'),
+        url(../fonts/ZephyrRegular.woff) format('woff'),
+        url(../fonts/ZephyrRegular.ttf) format('truetype'),
+        url(../fonts/ZephyrRegular.svg#ZephyrRegular) format('svg');
+    
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
