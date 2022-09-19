@@ -585,6 +585,11 @@ input, select, button, fieldset {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .sc-intro .intro-area .intro-box {
+    font-family: "Zephyr", arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+  }
   .sc-intro .num-area .num-box {
     height: 200px;
     font-size: 200px;
@@ -635,9 +640,6 @@ input, select, button, fieldset {
   .sc-intro .num-area .num-box {
     height: 200px;
     font-size: 200px;
-  }
-  .sc-intro .num-area .num-list {
-    transform: translateY(-200px);
   }
   .sc-intro .point-area {
     display: flex;
@@ -993,9 +995,6 @@ input, select, button, fieldset {
   .sc-goal .num-area .num-box {
     height: 200px;
     font-size: 200px;
-  }
-  .sc-goal .num-area .num-list {
-    transform: translateY(-400px);
   }
   .sc-goal .goal-area {
     flex-direction: column;
