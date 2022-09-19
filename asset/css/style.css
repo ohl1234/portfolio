@@ -224,6 +224,30 @@ input, select, button, fieldset {
   height: 10px;
 }
 
+@media (max-width: 767px) {
+  body {
+    cursor: auto;
+  }
+  .cursor {
+    display: none;
+  }
+}
+@-webkit-keyframes widthAni {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25vw;
+  }
+}
+@keyframes widthAni {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25vw;
+  }
+}
 .header {
   position: fixed;
   top: 15px;
@@ -266,7 +290,7 @@ input, select, button, fieldset {
   height: 100%;
   line-height: 50px;
   border-radius: 50px;
-  font-family: "Fahkwang", sans-serif;
+  font-family: "Fahkwang", arial, sans-serif;
 }
 .header .link-mail span {
   padding: 0 30px;
@@ -282,7 +306,7 @@ input, select, button, fieldset {
     height: 100%;
     line-height: 40px;
     border-radius: 50px;
-    font-family: "Fahkwang", sans-serif;
+    font-family: "Fahkwang", arial, sans-serif;
   }
   .header .link-mail span {
     padding: 0 15px;
@@ -297,7 +321,7 @@ input, select, button, fieldset {
   width: 100%;
   padding: 5vw 25px 30px;
   font-size: 14px;
-  font-family: "Fahkwang", sans-serif;
+  font-family: "Fahkwang", arial, sans-serif;
   background-color: #000;
   color: #fff;
 }
@@ -410,6 +434,7 @@ input, select, button, fieldset {
 .sc-intro .intro-area .sub-tit {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 33.33333333%;
   padding-left: 2vw;
   padding-right: 2vw;
@@ -421,7 +446,7 @@ input, select, button, fieldset {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  font-family: "Fahkwang", sans-serif;
+  font-family: "Fahkwang", arial, sans-serif;
   font-size: 12px;
   transition: all 0.8s;
 }
@@ -459,7 +484,8 @@ input, select, button, fieldset {
   top: -10vw;
   left: 60%;
   z-index: -1;
-  display: block;
+  display: flex;
+  justify-content: flex-start;
   width: 25vw;
   height: 35vw;
   overflow: hidden;
@@ -468,8 +494,8 @@ input, select, button, fieldset {
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
-  width: 25vw;
+  display: none;
+  width: 0;
   height: 35vw;
   background-image: url(../images/ohr-profile.jpeg);
   background-repeat: no-repeat;
@@ -487,6 +513,12 @@ input, select, button, fieldset {
 }
 .sc-intro .point-area .column-left .thumb-box {
   width: 100%;
+  background-color: #f00;
+  overflow: hidden;
+}
+.sc-intro .point-area .column-left img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .sc-intro .point-area .column-right {
   align-self: center;
@@ -501,7 +533,7 @@ input, select, button, fieldset {
 .sc-intro .point-area .desc-box .desc-tit {
   margin-bottom: 30px;
   font-size: 18px;
-  font-family: "Fahkwang", sans-serif;
+  font-family: "Fahkwang", arial, sans-serif;
   line-height: 1.4;
 }
 .sc-intro .point-area .desc-box .desc-txt {
@@ -545,7 +577,7 @@ input, select, button, fieldset {
 .sc-intro .caption-area .sub-tit {
   font-size: 18px;
   margin-bottom: 10px;
-  font-family: "Fahkwang", sans-serif;
+  font-family: "Fahkwang", arial, sans-serif;
 }
 .sc-intro .caption-area .desc {
   font-size: 30px;
@@ -641,7 +673,7 @@ input, select, button, fieldset {
   padding: 40px 0;
   color: #fff;
   font-size: 18px;
-  font-family: "Fahkwang", sans-serif;
+  font-family: "Fahkwang", arial, sans-serif;
   mix-blend-mode: difference;
 }
 .sc-project .project-area {
@@ -924,7 +956,7 @@ input, select, button, fieldset {
 .sc-goal .goal-area .desc-box .desc-tit {
   margin-bottom: 30px;
   font-size: 18px;
-  font-family: "Fahkwang", sans-serif;
+  font-family: "Fahkwang", arial, sans-serif;
   line-height: 1.4;
 }
 .sc-goal .goal-area .desc-box .desc-txt {
@@ -1007,7 +1039,7 @@ input, select, button, fieldset {
 }
 .sc-contact .contact-msg {
   font-size: 18px;
-  font-family: "Fahkwang", sans-serif;
+  font-family: "Fahkwang", arial, sans-serif;
 }
 .sc-contact .contact-area {
   display: flex;
@@ -1028,7 +1060,7 @@ input, select, button, fieldset {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  font-family: "Fahkwang", sans-serif;
+  font-family: "Fahkwang", arial, sans-serif;
   font-size: 12px;
   transition: all 0.8s;
 }

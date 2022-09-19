@@ -81,6 +81,7 @@
         .sub-tit {
             display: flex;
             justify-content: center;
+            align-items: center;
             width: 33.33333333%;
             padding-left: 2vw;
             padding-right: 2vw;
@@ -129,7 +130,8 @@
                 top: -10vw;
                 left: 60%;
                 z-index: -1;
-                display: block;
+                display: flex;
+                justify-content: flex-start;
                 width: 25vw;
                 height: 35vw;
                 overflow: hidden;
@@ -138,8 +140,8 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                display: block;
-                width: 25vw;
+                display: none;
+                width: 0;
                 height: 35vw;
                 background-image: url(../images/ohr-profile.jpeg);
                 background-repeat: no-repeat;
@@ -151,7 +153,6 @@
     .point-area {
         display: flex;
         padding: 30vw 0 5vw 0;
-        //background-color: #fff;
         & > div {
             width: 50%;
             height: 100%;
@@ -159,6 +160,11 @@
         .column-left {
             .thumb-box {
                 width: 100%;
+                background-color: #f00;
+                overflow: hidden;
+            }
+            img {
+                object-fit: contain;
             }
         }
         .column-right {

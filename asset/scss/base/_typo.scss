@@ -1,19 +1,18 @@
-@import url('http://fonts.cdnfonts.com/css/fahkwang?styles=50504,50506');
-
-
 @font-face {
 	font-family: 'Pretendard';
-	font-weight: 500;
-	font-display: swap;
 	src: url(../fonts/woff2/Pretendard-Medium.woff2) format('woff2'),
-         url(../fonts/woff/Pretendard-Medium.woff) format('woff');
+    url(../fonts/woff/Pretendard-Medium.woff) format('woff');
+   
+    font-weight: 500;
+    font-style: normal;
 }
 @font-face {
 	font-family: 'Pretendard';
-	font-weight: 300;
-	font-display: swap;
 	src: url(../fonts/woff2/Pretendard-Light.woff2) format('woff2'),
-         url(../fonts/woff/Pretendard-Light.woff) format('woff');
+    url(../fonts/woff/Pretendard-Light.woff) format('woff');
+	
+    font-weight: 300;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Zephyr';
@@ -42,7 +41,3 @@
     font-style: normal;      
 }
 
-  
-  
-
-  

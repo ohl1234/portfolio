@@ -25,3 +25,21 @@
         height: 10px;
     }
 }
+
+@include mobile {
+    body {
+        cursor: auto;
+    }
+    .cursor {
+        display: none;
+    }
+}
+
+@keyframes widthAni {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 25vw;
+    }
+}
