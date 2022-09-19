@@ -95,6 +95,9 @@ $(function(){
             $('[data-hover]').on('mouseover',function(){
                 $(this).css('cursor','auto');
             })
+            $('[data-img]').on('mouseover',function(){
+                $(this).css('cursor','auto');
+            })
             /**
              * number trigger
              */
