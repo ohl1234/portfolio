@@ -137,7 +137,6 @@ $(function(){
                         start:"top 120%",
                         end:"bottom top",
                         scrub:1,
-                        markers:true
                     },
                     yPercent:15,
                     opacity:0,
@@ -153,7 +152,6 @@ $(function(){
                     trigger:'.point-area',
                     start:'top bottom',
                     end:'bottom top',
-                    markers:true,
                     scrub:1
                 },
                 scale:1.4

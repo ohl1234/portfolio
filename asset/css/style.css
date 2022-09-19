@@ -512,7 +512,6 @@ input, select, button, fieldset {
 }
 .sc-intro .point-area .column-left .thumb-box {
   width: 100%;
-  background-color: #f00;
   overflow: hidden;
 }
 .sc-intro .point-area .column-left img {
