@@ -218,9 +218,27 @@ input, select, button, fieldset {
   transition: all 0.1s ease;
   mix-blend-mode: difference;
 }
+.cursor span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  white-space: nowrap;
+  font-family: "Fahkwang", arial, sans-serif;
+}
 .cursor.cursor-over {
   width: 10px;
   height: 10px;
+}
+.cursor.img-over {
+  width: 120px;
+  height: 120px;
+  mix-blend-mode: normal;
+}
+.cursor.img-over span {
+  display: inline-block;
+  color: #000;
 }
 
 @media (max-width: 767px) {

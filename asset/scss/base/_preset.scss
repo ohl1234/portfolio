@@ -20,9 +20,24 @@
     pointer-events: none;
     transition: all 0.1s ease;
     mix-blend-mode: difference;
+    span {
+        @include position-Center;
+        display: none;
+        white-space: nowrap;
+        font-family: $font-en4;
+    }
     &.cursor-over {
         width: 10px;
         height: 10px;
+    }
+    &.img-over {
+        width: 120px;
+        height: 120px;
+        mix-blend-mode:normal;
+        span {
+            display: inline-block;
+            color: #000;
+        }
     }
 }
 

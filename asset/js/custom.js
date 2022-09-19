@@ -24,7 +24,18 @@ $(function(){
             })
             $('[data-hover]').on('mouseleave',function(){
                 $('.cursor').removeClass('cursor-over')
+                $(this).css('cursor','auto');
             })
+            $('[data-img]').on('mouseover',function(){
+                $('.cursor').addClass('img-over')
+                $(this).css('cursor','none');
+            })
+            $('[data-img]').on('mouseleave',function(){
+                $('.cursor').removeClass('img-over')
+                $(this).css('cursor','auto');
+            })
+
+
 
             /**
              * number trigger
@@ -81,7 +92,9 @@ $(function(){
         },
         // small
         "(max-width: 767px)": function() {
-
+            $('[data-hover]').on('mouseover',function(){
+                $(this).css('cursor','auto');
+            })
             /**
              * number trigger
              */
