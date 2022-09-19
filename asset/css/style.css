@@ -56,7 +56,7 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   font-size: 14px;
   font-family: "Pretendard", arial, sans-serif;
   line-height: 1.25em;
