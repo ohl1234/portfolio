@@ -247,6 +247,33 @@ input, select, button, fieldset {
     width: 25vw;
   }
 }
+@font-face {
+  font-family: "Pretendard";
+  src: url(../fonts/woff2/Pretendard-Medium.woff2) format("woff2"), url(../fonts/woff/Pretendard-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url(../fonts/woff2/Pretendard-Light.woff2) format("woff2"), url(../fonts/woff/Pretendard-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zephyr";
+  src: url("../fonts/ZephyrRegular.eot");
+  src: url("../fonts/ZephyrRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ZephyrRegular.woff") format("woff"), url("../fonts/ZephyrRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Culture";
+  src: url(../fonts/Culture.eot);
+  src: url(../fonts/Culture.eot?#iefix) format("embedded-opentype"), url(../fonts/Culture.otf) format("otf"), url(../fonts/Culture.svg#Culture) format("svg"), url(../fonts/Culture.ttf) format("truetype"), url(../fonts/Culture.woff) format("woff"), url(../fonts/Culture.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 .header {
   position: fixed;
   top: 15px;
