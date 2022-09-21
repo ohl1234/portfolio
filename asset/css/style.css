@@ -443,6 +443,7 @@ a[data-img].active {
   }
   .footer .link-area {
     margin-bottom: 35px;
+    padding: 5px 15px;
   }
   .footer .link-area a + a {
     margin-left: 12px;
@@ -647,11 +648,31 @@ a[data-img].active {
 .footer .link-area a + a {
   margin-left: 25px;
 }
+.footer .link-area a .mobile {
+  display: none;
+}
 
 @media (max-width: 1023px) {
+  .footer .link-area a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 100%;
+  }
   .footer .link-area a:hover {
     background-color: #000;
     color: #fff;
+  }
+  .footer .link-area a .pc {
+    display: none;
+  }
+  .footer .link-area a .mobile {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
   }
 }
 .sc-project .project-area {
