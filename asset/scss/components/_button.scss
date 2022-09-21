@@ -1,0 +1,263 @@
+.header {
+    .contact-area {
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        transition: all 0.7s;
+        &:hover {
+            background-color: #fff;
+            .link-mail {
+                color: #000;
+            }
+        }
+    }
+    .link-mail {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 50px;
+        border-radius: 50px;
+        font-family: $font-en4;
+        span {
+            padding: 0 30px;
+            font-size: 18px;
+            line-height: 1;
+        }
+    }
+}
+
+@include laptop {
+    .header {
+        .contact-area {
+            &:hover {
+                background-color: #000;
+                .link-mail {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// header end
+
+.sc-intro {
+    .round {
+        @include round-Point;
+        &:hover {
+            border: 1px solid transparent;
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
+
+@include laptop {
+    .sc-intro {
+        .round {
+            @include round-Point;
+            pointer-events: none;
+            &:hover {
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// sc-intro end
+
+.sc-project {
+    .project-wrap {
+        .links {
+            margin: 24px 0;
+            font-size: 18px;
+            font-family: $font-en2;
+            a {
+                display: inline-block;
+                padding: 10px 20px;
+                border: 1px solid #000;
+                border-radius: 30px;
+                transition: all 0.5s;
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                    border: 1px solid transparent;
+                }
+    
+            }
+        }
+    }
+    .wrap1 {
+        a[data-hover] {
+            border: 1px solid #fff;
+            &:hover {
+                background-color: #fff;
+                color: #36ac36;
+            }
+        }
+    }
+    .wrap3 {
+        a[data-hover] {
+            border: 1px solid #fff;
+            &:hover {
+                background-color: #fff;
+                color: #ff6f62;
+            }
+        }
+    }
+    .wrap5 {
+        a[data-hover] {
+            &:hover {
+                background-color: #fff;
+                color: #ff6f62;
+            }
+        }
+    }
+    .wrap6 {
+        a[data-hover] {
+            border: 1px solid #fff;
+            &:hover {
+                background-color: #fff;
+                color: #2ac1bc;
+            }
+        }
+    }
+    .wrap7 {
+        a[data-hover] {
+            border: 1px solid #fff;
+            &:hover {
+                background-color: #fff;
+                color: #00d465;
+            }
+        }
+    }
+}
+
+@include laptop {
+    .sc-project {
+        .project-wrap {
+            .links {
+                a {
+                    &:hover {
+                        background-color: transparent;
+                        color: #000;
+                        border: 1px solid #000;
+                    }
+        
+                }
+            }
+        }
+        .wrap1 {
+            a[data-hover] {
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
+        }
+        .wrap3 {
+            a[data-hover] {
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
+        }
+        .wrap5 {
+            a[data-hover] {
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid #000;
+                    color: #000;
+                }
+            }
+        }
+        .wrap6 {
+            a[data-hover] {
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
+        }
+        .wrap7 {
+            a[data-hover] {
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// sc-project end
+
+.sc-contact {
+    .link-mail {
+        display: block;
+        @include round-Point;
+        &:hover {
+            border: 1px solid transparent;
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
+
+@include laptop {
+    .sc-contact {
+        .link-mail {
+            cursor: pointer;
+            &:hover {
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// sc-contact-end
+
+.footer {
+    .link-area {
+        display: flex;
+        a {
+            display: block;
+            padding: 10px 25px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            transition: all 0.5s;
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+            & + a {
+                margin-left: 25px;
+            }
+        }
+    }
+}
+@include laptop {
+    .footer {
+        .link-area {
+            a {
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// footer end

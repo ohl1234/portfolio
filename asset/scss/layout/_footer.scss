@@ -6,7 +6,6 @@
     padding: 5vw 25px 30px;
     font-size: 14px;
     font-family: $font-en4;
-    background-color: #000;
     color: #fff;
     .link-area {
         display: flex;
@@ -34,9 +33,6 @@
         .link-area {
             margin-bottom: 35px;
             a {
-                &:hover {
-                    pointer-events: none;
-                }
                 & + a {
                     margin-left: 12px;
                 }

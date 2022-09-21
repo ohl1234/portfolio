@@ -1,8 +1,6 @@
 $(function(){
     ScrollTrigger.matchMedia({
         // large
-
-
         "(min-width: 1024px)": function() {
 
             /**
@@ -18,28 +16,36 @@ $(function(){
                 })
             })
         
-            $('[data-hover]').on('mouseover',function(){
+            $('[data-hover]').hover(function(){
                 $('.cursor').addClass('cursor-over')
-                $(this).css('cursor','none');
-            })
-            $('[data-hover]').on('mouseleave',function(){
+                $(this).addClass('active')
+            },function(){
                 $('.cursor').removeClass('cursor-over')
-                $(this).css('cursor','auto');
+                $(this).removeClass('active')
             })
-            $('[data-img]').on('mouseover',function(){
+
+            $('[data-img]').hover(function(){
                 $('.cursor').addClass('img-over')
-                $(this).css('cursor','none');
-            })
-            $('[data-img]').on('mouseleave',function(){
+                $(this).addClass('active')
+            },function(){
                 $('.cursor').removeClass('img-over')
-                $(this).css('cursor','auto');
+                $(this).removeClass('active')
             })
+            /**
+             *  img hover event
+             */
 
-
+            profile = gsap.to('.intro-bg',{width:'25vw',paused:true})
+            $('#profileHover').hover(function(){
+                profile.play();
+            },function(){
+                profile.reverse();
+            })
 
             /**
              * number trigger
              */
+
             gsap.set('.sc-intro .num-list',{y:0})
             gsap.set('.sc-goal .num-list',{y:0})
 
@@ -61,9 +67,61 @@ $(function(){
                 duration:1,
                 y:'-560px'
             })
+
+            /**
+             * round cursor event
+             */
+
+            $(".sc-contact .sub-tit").mousemove(function(e){
+            var x = ((-$(this).width() / 2) + e.offsetX) *0.3;      // -(sub-tit width / 2) + sub-tit offsetX값 * 0.2
+            var y = ((-$(this).height() / 2) + e.offsetY) *0.3;     // -(sub-tit width / 2) + sub-tit offsetY값 * 0.2
+            gsap.to(".sc-contact .link-mail", {
+                transform: "translate(" + x + "px," + y + "px)"
+            })
+            })
+            $(".sc-contact .sub-tit").mouseout(function(e){
+            gsap.to(".sc-contact .link-mail", {
+                transform: "translate(0,0)"
+            })
+            })
+
+            $(".sc-intro .sub-tit").mousemove(function(e){
+            var x = ((-$(this).width() / 2) + e.offsetX) *0.3;   
+            var y = ((-$(this).height() / 2) + e.offsetY) *0.3;
+            gsap.to(".sc-intro .round", {
+                transform: "translate(" + x + "px," + y + "px)"
+            })
+            })
+            $(".sc-intro .sub-tit").mouseout(function(e){
+            gsap.to(".sc-intro .round", {
+                transform: "translate(0,0)"
+            })
+            })
+            
         },
         // medium
-        "(min-width: 768px) and (max-width: 1024px)": function() { 
+        "(min-width: 768px) and (max-width: 1023px)": function() { 
+
+            /**
+             * moust event 
+             */
+
+            $('[data-hover]').hover(function(){ 
+                $(this).removeClass('active')
+            })
+            $('[data-img]').hover(function(){ 
+                $(this).removeClass('active')
+            })
+
+            /**
+             *  img hover event
+             */
+
+            $('#profileHover').hover(function(){
+                profile.paused();
+            },function(){
+                profile.paused();
+            })
 
             /**
              * number trigger
@@ -91,16 +149,12 @@ $(function(){
             })
         },
         // small
-        "(max-width: 767px)": function() {
-            $('[data-hover]').on('mouseover',function(){
-                $(this).css('cursor','auto');
-            })
-            $('[data-img]').on('mouseover',function(){
-                $(this).css('cursor','auto');
-            })
+        "(max-width: 767px)": function() {   
+      
             /**
              * number trigger
              */
+
             gsap.set('.sc-intro .num-list',{y:0})
             gsap.set('.sc-goal .num-list',{y:0})
 
@@ -125,6 +179,56 @@ $(function(){
         },
         // all
         "all": function() {
+
+            /**
+             * text-motion
+             */
+
+            gsap.set(".txt-motion", {
+                yPercent: 110,
+                transformStyle: "preserve-3d",
+                opacity: 0,
+                rotationX: -45,
+                transformOrigin: "0% 50% -100%",
+            });
+        
+            gsap.to('.sc-visual .txt-motion', {
+            transformStyle: "preserve-3d",
+            opacity: 1,
+            rotationX: 0,
+            transformOrigin: "50% 50%",
+            yPercent: 0,
+            duration:1.5,
+            stagger:0.1,
+            });
+
+            gsap.to('.sc-intro .txt-motion',{
+                scrollTrigger:{
+                    trigger:'.sc-visual',
+                    start: "40% top",
+                },
+                transformStyle: "preserve-3d",
+                opacity: 1,
+                rotationX: 0,
+                transformOrigin: "50% 50%",
+                yPercent: 0,
+                duration:1.5,
+                stagger:0.1
+            });
+
+            gsap.to('.sc-contact .txt-motion',{
+                scrollTrigger:{
+                    trigger:'.sc-contact',
+                    start: "top 50%"
+                },
+                transformStyle: "preserve-3d",
+                opacity: 1,
+                rotationX: 0,
+                transformOrigin: "50% 50%",
+                yPercent: 0,
+                duration:1.5,
+                stagger:0.1
+            });
 
             /**
              * Trigger event
@@ -170,15 +274,44 @@ $(function(){
                 },
                 scale:1.4
             })
+
+            /**
+             *  project-area dim
+             */
+
+            $('.project-wrap').each(function(i,el){
+                child = $(this).find('.bg-shadow')
+                gsap.to(child,{
+                    scrollTrigger:{
+                        trigger:el,
+                        start:"top top",
+                        end:"bottom top",
+                        scrub:1
+                    },
+                    opacity:1
+                })
+            })
+
+            /**
+             * background color change 
+             */
+
+            $('[data-color]').each(function(i,el){ 
+                color = ($(this).data('color') == '#fff') ? 'white' : 'black' // 만약 data-color = "#fff" 면 "white" 아니면 "black" -> 클래스명 변수
+                gsap.to('.background',{
+                    scrollTrigger:{
+                        trigger:el,
+                        start:"top 50%",
+                        end:"bottom top",
+                        scrub:1,
+                        toggleClass: {targets: ".background", className: color}
+                    }
+                })
+            })
+
+
         }
       });
-
-
-
-    // background color change
     // 퍼스펙티브 3d
-    // 원 호버하면 따라다니는거
     // 로딩 
-    // 호버시 사진 펼쳐지기
-    // 
 })

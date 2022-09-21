@@ -20,11 +20,29 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin round-Point {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    font-family: $font-en4;
+    font-size: 12px;
+    transition: background-color 0.8s, border 0.8s , color 0.8s;
+}
 // responsive
 
-$laptop: 1024px;
+$laptop: 1023px;
 $tablet: 768px;
 $mobile: 767px;
+
+
+@mixin laptop {
+    @media (max-width:$laptop){
+        @content;
+    }
+}
 
 @mixin tablet {
     @media (min-width:$tablet) and (max-width:$laptop){
