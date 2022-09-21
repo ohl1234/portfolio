@@ -7,6 +7,33 @@
     overflow: hidden;
 }
 
+.loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/loading-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $font-en1;
+    font-size: 20vw;
+    line-height: 1;
+    color: #fff;
+    .num-wrap {
+        display: flex;
+        overflow: hidden;
+    }
+    .num-list {
+        height: 20vw;
+        text-align: center;
+    }
+}
+
 .cursor {
     position: fixed;
     top: 0;
@@ -39,11 +66,13 @@
         }
     }
 }
+
 a[data-hover] {
     &.active {
         cursor: none;
     }
 }
+
 a[data-img] {
     &.active {
         cursor: none;

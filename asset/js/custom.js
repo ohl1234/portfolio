@@ -181,6 +181,21 @@ $(function(){
         "all": function() {
 
             /**
+             *  loading ani
+             */
+
+            const loadingAni = gsap.timeline({
+                onComplete:function(){
+                    introAni.play();
+                }
+            })
+            loadingAni.addLabel('a')
+            .to('.loading .list1',{y:'-280vw',duration:4},'a')
+            .to('.loading .list2',{y:'-140vw',duration:5},'a')
+            .to('.loading .list3',{y:'-340vw',duration:3},'a')
+            .to('.loading',{yPercent:-100,display:'none'},'a+=5')
+
+            /**
              * text-motion
              */
 
@@ -192,14 +207,15 @@ $(function(){
                 transformOrigin: "0% 50% -100%",
             });
         
-            gsap.to('.sc-visual .txt-motion', {
+            const introAni = gsap.to('.sc-visual .txt-motion', {
             transformStyle: "preserve-3d",
             opacity: 1,
             rotationX: 0,
             transformOrigin: "50% 50%",
             yPercent: 0,
-            duration:1.5,
+            duration:1.2,
             stagger:0.1,
+            paused:true
             });
 
             gsap.to('.sc-intro .txt-motion',{
