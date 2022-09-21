@@ -119,8 +119,10 @@ $(function(){
 
             $('#profileHover').hover(function(){
                 profile.paused();
+                $(this).css('cursor','default')
             },function(){
                 profile.paused();
+                $(this).css('cursor','default')
             })
 
             /**
