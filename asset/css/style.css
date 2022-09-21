@@ -61,6 +61,7 @@ body {
   font-family: "Pretendard", arial, sans-serif;
   line-height: 1.25em;
   color: #fff;
+  background-color: #000;
   word-wrap: break-word;
   word-break: break-all;
   -webkit-font-smoothing: antialiased;
