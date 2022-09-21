@@ -176,7 +176,8 @@ $(function(){
                     end:"bottom top",
                 },
                 duration:1,
-                y:'-400px'
+                y:'-400px',
+                delay:0.6
             })
         },
         // all
@@ -319,7 +320,7 @@ $(function(){
                 gsap.to('.background',{
                     scrollTrigger:{
                         trigger:el,
-                        start:"top 50%",
+                        start:"top 30%",
                         end:"bottom top",
                         scrub:1,
                         toggleClass: {targets: ".background", className: color}

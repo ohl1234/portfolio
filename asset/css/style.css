@@ -283,7 +283,7 @@ a[data-img].active {
   right: 0;
   z-index: -1;
   background-color: #000;
-  transition: background 1.5s;
+  transition: background 1s;
 }
 .background.white {
   background-color: #fff;
@@ -1249,6 +1249,7 @@ a[data-img].active {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 15vw;
+    padding-top: 30vw;
   }
   .sc-goal .num-area .num-box {
     height: 200px;
