@@ -53,8 +53,7 @@
             align-self: auto;
             .txt2 {
                 display: block;
-                margin-left: 15px;
-                font-size: 8vw;
+                margin-left: 0;
             }
         }
         .txt-line2 {
@@ -457,6 +456,7 @@
             .column-right {
                 padding-right: 0;
                 height: 1000px;
+                overflow: hidden;
                 img {
                     width: 100%;
                     height: 100%;
@@ -511,7 +511,11 @@
         line-height: 1;
     }
 }
-
+@include tablet {
+    .sc-contact {
+        height: 60vh;
+    }
+}
 @include mobile {
     .sc-contact {
         .msg-area {
