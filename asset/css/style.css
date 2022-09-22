@@ -24,11 +24,6 @@
      tab-size: 4;
 }
 
-html, body {
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
@@ -61,7 +56,9 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   font-family: "Pretendard", arial, sans-serif;
   line-height: 1.25em;
@@ -72,7 +69,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: none;
-  overflow-x: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -851,6 +847,7 @@ a[data-img].active {
   height: auto;
   min-height: 110vh;
   padding-top: 10vw;
+  overflow-x: hidden;
   color: #fff;
 }
 .sc-visual .sc-title {
