@@ -320,7 +320,7 @@ $(function(){
                 gsap.to('.background',{
                     scrollTrigger:{
                         trigger:el,
-                        start:"top 30%",
+                        start:"top 40%",
                         end:"bottom top",
                         scrub:1,
                         toggleClass: {targets: ".background", className: color}
