@@ -1020,7 +1020,7 @@ a[data-img].active {
 }
 .sc-intro .point-area .desc-box .desc-txt {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
 }
 .sc-intro .num-area {
   display: flex;
@@ -1227,7 +1227,7 @@ a[data-img].active {
 }
 .sc-goal .goal-area .desc-box .desc-txt {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
 }
 .sc-goal .goal-area .column-right {
   padding-right: 8vw;

@@ -297,6 +297,7 @@ $(function(){
             /**
              * Trigger event
              */
+
             const visualAni = gsap.timeline({
                     scrollTrigger:{
                     trigger:'.sc-visual .sc-title',
@@ -308,10 +309,7 @@ $(function(){
             visualAni.addLabel('a')
             .to('.sc-visual .txt-line1',{xPercent:100},'a')
             .to('.sc-visual .txt-line2',{xPercent:-100},'a')
-            
-            /**
-             * Trigger 
-             */
+
             $('[data-fade]').each(function(i,el){
                 gsap.from(el,{
                     scrollTrigger:{
@@ -329,6 +327,7 @@ $(function(){
             /**
              * img trigger
              */
+
             gsap.from('.sc-intro .point-area img',{
                 scrollTrigger:{
                     trigger:'.point-area',
