@@ -519,6 +519,7 @@
 }
 @include mobile {
     .sc-contact {
+        height: 80vh;
         .msg-area {
             padding-left: 0;
             margin-bottom: 20vw;

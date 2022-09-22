@@ -1332,6 +1332,9 @@ a[data-img].active {
   }
 }
 @media (max-width: 767px) {
+  .sc-contact {
+    height: 80vh;
+  }
   .sc-contact .msg-area {
     padding-left: 0;
     margin-bottom: 20vw;
