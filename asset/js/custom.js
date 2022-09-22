@@ -4,6 +4,21 @@ $(function(){
         "(min-width: 1024px)": function() {
 
             /**
+             *  header hide
+             */
+
+            $(window).scroll(function(){
+                curr = $(this).scrollTop();
+                contactArea = $('.sc-contact').offset().top;
+
+                if(curr >= contactArea - 200){
+                    $('.header').addClass('active')
+                }else{
+                    $('header').removeClass('active')
+                }
+            })
+
+            /**
              * moust event 
              */
 
@@ -103,6 +118,21 @@ $(function(){
         "(min-width: 768px) and (max-width: 1023px)": function() { 
 
             /**
+             *  header hide
+             */
+
+             $(window).scroll(function(){
+                curr = $(this).scrollTop();
+                goalArea = $('.sc-goal').offset().top;
+
+                if(curr >= goalArea + 200){
+                    $('.header').addClass('active')
+                }else{
+                    $('header').removeClass('active')
+                }
+            })
+
+            /**
              * moust event 
              */
 
@@ -152,6 +182,21 @@ $(function(){
         },
         // small
         "(max-width: 767px)": function() {   
+
+            /**
+             *  header hide
+             */
+
+            $(window).scroll(function(){
+                curr = $(this).scrollTop();
+                goalArea = $('.sc-goal').offset().top;
+
+                if(curr >= goalArea + 500){
+                    $('.header').addClass('active')
+                }else{
+                    $('header').removeClass('active')
+                }
+            })
       
             /**
              * number trigger
@@ -326,21 +371,6 @@ $(function(){
                         toggleClass: {targets: ".background", className: color}
                     }
                 })
-            })
-
-            /**
-             *  header hide
-             */
-
-            $(window).scroll(function(){
-                curr = $(this).scrollTop();
-                contactArea = $('.sc-contact').offset().top;
-
-                if(curr >= contactArea - 120){
-                    $('.header').addClass('active')
-                }else{
-                    $('header').removeClass('active')
-                }
             })
 
         }

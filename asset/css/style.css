@@ -430,7 +430,7 @@ a[data-img].active {
 @media (max-width: 767px) {
   .footer {
     flex-direction: column;
-    padding: 10vw 25px 30px 5vw;
+    padding: 15vw 25px 30px 5vw;
   }
   .footer .link-area {
     margin-bottom: 35px;
@@ -1274,7 +1274,6 @@ a[data-img].active {
   }
   .sc-goal .goal-area .column-right {
     padding-right: 0;
-    height: 1000px;
     overflow: hidden;
   }
   .sc-goal .goal-area .column-right img {
