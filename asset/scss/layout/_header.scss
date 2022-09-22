@@ -12,6 +12,8 @@
     font-family: $font-en1;
     mix-blend-mode: difference;
     color: #fff;
+    opacity: 1;
+    transition: opacity 0.4s;
     .logo-area {
         svg {
             fill: #fff;
@@ -20,5 +22,8 @@
     .logo {
         display: block;
         width: 85px;
+    }
+    &.active {
+        opacity: 0;
     }
 }

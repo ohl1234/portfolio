@@ -385,6 +385,8 @@ a[data-img].active {
   font-family: "Zephyr", arial, sans-serif;
   mix-blend-mode: difference;
   color: #fff;
+  opacity: 1;
+  transition: opacity 0.4s;
 }
 .header .logo-area svg {
   fill: #fff;
@@ -392,6 +394,9 @@ a[data-img].active {
 .header .logo {
   display: block;
   width: 85px;
+}
+.header.active {
+  opacity: 0;
 }
 
 .footer {
@@ -805,14 +810,14 @@ a[data-img].active {
   }
   .sc-project .project-wrap .column-left {
     width: 100%;
-    height: 50%;
+    height: 45%;
   }
   .sc-project .project-wrap .column-right {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
-    height: 50%;
+    height: 55%;
   }
   .sc-project .project-wrap .project-tit {
     font-size: 40px;
@@ -1325,7 +1330,7 @@ a[data-img].active {
 @media (max-width: 767px) {
   .sc-contact .msg-area {
     padding-left: 0;
-    margin-bottom: 30vw;
+    margin-bottom: 20vw;
     text-align: center;
   }
   .sc-contact .contact-area {

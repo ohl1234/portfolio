@@ -328,6 +328,20 @@ $(function(){
                 })
             })
 
+            /**
+             *  header hide
+             */
+
+            $(window).scroll(function(){
+                curr = $(this).scrollTop();
+                contactArea = $('.sc-contact').offset().top;
+
+                if(curr >= contactArea - 120){
+                    $('.header').addClass('active')
+                }else{
+                    $('header').removeClass('active')
+                }
+            })
 
         }
       });

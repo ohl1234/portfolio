@@ -168,14 +168,14 @@
             justify-content: center;
             .column-left {
                 width: 100%;
-                height: 50%;
+                height: 45%;
             }
             .column-right {
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                justify-content: flex-start;
+                align-items: flex-start;
                 width: 100%;
-                height: 50%;
+                height: 55%;
             }
             .project-tit {
                 font-size: 40px;
