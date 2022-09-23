@@ -88,29 +88,31 @@ $(function(){
              */
 
             $(".sc-contact .sub-tit").mousemove(function(e){
-            var x = ((-$(this).width() / 2) + e.offsetX) *0.3;      // -(sub-tit width / 2) + sub-tit offsetX값 * 0.2
-            var y = ((-$(this).height() / 2) + e.offsetY) *0.3;     // -(sub-tit width / 2) + sub-tit offsetY값 * 0.2
-            gsap.to(".sc-contact .link-mail", {
-                transform: "translate(" + x + "px," + y + "px)"
-            })
-            })
+                var x = ((-$(this).width() / 2) + e.offsetX) *0.3;      
+                // -(sub-tit width / 2) + sub-tit offsetX값 * 0.3
+                var y = ((-$(this).height() / 2) + e.offsetY) *0.3;     
+                // -(sub-tit width / 2) + sub-tit offsetY값 * 0.3
+                gsap.to(".sc-contact .link-mail", {
+                    transform: "translate(" + x + "px," + y + "px)"
+                    })
+                })
             $(".sc-contact .sub-tit").mouseout(function(e){
-            gsap.to(".sc-contact .link-mail", {
-                transform: "translate(0,0)"
-            })
+                gsap.to(".sc-contact .link-mail", {
+                    transform: "translate(0,0)"
+                 })
             })
 
             $(".sc-intro .sub-tit").mousemove(function(e){
-            var x = ((-$(this).width() / 2) + e.offsetX) *0.3;   
-            var y = ((-$(this).height() / 2) + e.offsetY) *0.3;
-            gsap.to(".sc-intro .round", {
-                transform: "translate(" + x + "px," + y + "px)"
-            })
+                var x = ((-$(this).width() / 2) + e.offsetX) *0.3;   
+                var y = ((-$(this).height() / 2) + e.offsetY) *0.3;
+                gsap.to(".sc-intro .round", {
+                    transform: "translate(" + x + "px," + y + "px)"
+                })
             })
             $(".sc-intro .sub-tit").mouseout(function(e){
-            gsap.to(".sc-intro .round", {
-                transform: "translate(0,0)"
-            })
+                gsap.to(".sc-intro .round", {
+                    transform: "translate(0,0)"
+                })
             })
             
         },
