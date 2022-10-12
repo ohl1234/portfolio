@@ -53,6 +53,7 @@ ul, ol {
 */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -300,8 +301,8 @@ a[data-img].active {
   left: 0;
   right: 0;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .txt-line1,
